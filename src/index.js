@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 3000;
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
-    app.listen(3000, ()=>{
+    app.listen(PORT, ()=>{
         console.log("Server started on port on "+PORT)
     });
 })
